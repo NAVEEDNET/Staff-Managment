@@ -1,0 +1,7 @@
+.body{
+    background-image: url('University of Peradeniya.jpg');
+    display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
