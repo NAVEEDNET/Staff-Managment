@@ -68,3 +68,7 @@ function fetchNewRequests($con) {
 $request = fetchNewRequests($con)
 
 ?>
+ <!-- $sql = "SELECT r.request_id, s.staff_name, rv.request_value
+FROM request r
+JOIN Staff s ON r.staff_id = s.staff_id
+JOIN RequestValues rv ON r.request_value_id = rv.request_value_id"; -->
