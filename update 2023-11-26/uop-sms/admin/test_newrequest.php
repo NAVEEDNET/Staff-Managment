@@ -3,19 +3,19 @@ session_start();
 require_once('admin_header.php');
 include "../db/connection.php";
 
-// Fetch and store requests in the session if not already stored
+
 if (!isset($_SESSION['requests']) || empty($_SESSION['requests'])) {
     $_SESSION['requests'] = fetchNewRequests($con);
 }
 
-// Display requests if available in the session
+
 if (!empty($_SESSION['requests'])) {
 ?>
 
 <main id="main" class="main">
     <div class="pagetitle">
         <h1>New Requests</h1>
-    </div><!-- End Page Title -->
+    </div>
 
     <section class="section dashboard">
         <?php foreach ($_SESSION['requests'] as $request) { ?>
@@ -59,7 +59,7 @@ if (!empty($_SESSION['requests'])) {
                             <div class="col-md-6">
                                 <label for="requestValue" class="form-label">Request Value</label>
                                 <select id="requestValue" class="form-select" name="value">
-                                    <!-- Options will be dynamically populated using JavaScript -->
+                                 
                                 </select>
                             </div>
                         </p>
